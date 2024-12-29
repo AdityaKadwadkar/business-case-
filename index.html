@@ -138,11 +138,50 @@
 </section>
         <section class="section">
     <h2>Nodes with edges</h2>
+            <p>This picture simplifies the city design map and helps to visualize it easily</p>
     <img src="Images/Screenshot 2024-12-29 184918.png" 
          alt="Screenshot of Smart Transportation System" 
          style="max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0;">
     <p>This picture provides an overview of the Smart Transportation Management System interface.</p>
 </section>
+        <section>
+            <h1>The data generated on the city can be found in the file </h1>
+        </section>
+        <h1>Reflection on Designing and Implementing the Transport Management System</h1>
+
+    <div class="section">
+        <h2>Organizing User Tasks</h2>
+        <p>
+            I had to break down the different things a user might want to do into clear, distinct options. This makes the system easy to navigate. For example, you can either search for the shortest path between two places, explore nearby locations without worrying about the shortest route, or even visit places like hospitals or police stations. By giving users clear choices, they can quickly find what they're looking for.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Choosing the Right Algorithms</h2>
+        <p>
+            I had to pick algorithms that suit the task at hand:
+        </p>
+        <ul>
+            <li><strong>Dijkstra’s Algorithm</strong> is great for finding the shortest route between two points, which is perfect for the travel scenarios where time matters.</li>
+            <li><strong>DFS (Depth First Search)</strong> is useful when the goal is to explore locations without worrying about the most efficient path. It’s like wandering through a city, taking different paths just to see what’s there.</li>
+            <li><strong>BFS (Breadth First Search)</strong> is helpful for when we want to visit places level by level, starting from a point and gradually expanding outward.</li>
+            <li><strong>Prim's and Kruskal’s Algorithms</strong> are used for connected, efficient routes. Prim's ensures all places are visited in the shortest connected path, while Kruskal’s focuses on covering all places without needing a connected path, but still in the shortest way possible.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>User Experience and Simplicity</h2>
+        <p>
+            Overall, I aimed for simplicity in how users interact with the system. Whether they're looking for a specific place, making a payment, or giving a rating, everything is broken down into manageable steps. The system’s layout is designed to let users focus on what they need without feeling overwhelmed by too many options at once.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Handling Location-Specific Needs</h2>
+        <p>
+            Including options for emergency services (like hospitals, police stations, and fire departments) makes the system more practical and adds a layer of real-world usefulness. It feels more connected to everyday needs.
+        </p>
+    </div>
 
     </main>
     <footer>
