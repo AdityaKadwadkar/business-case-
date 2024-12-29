@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Transportation Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+            padding: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Transportation Management System</h1>
+        <p>Supporting Sustainable Development Goals (SDG) 11: Sustainable Cities and Communities</p>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Time Lookup Between Places:</strong> Users can search for the time required to travel between two locations using a lookup table. This feature is likely implemented with pre-calculated or real-time data, allowing quick access to travel times.</li>
+                <li><strong>Exploring Nearby Locations (DFS):</strong> For users who want to wander without a specific destination, the system uses Depth First Search (DFS) to suggest nearby locations. This feature helps in casual exploration.</li>
+                <li><strong>Shortest Path Finder (Dijkstra’s Algorithm):</strong> For users needing the shortest path between two specific locations, this feature employs Dijkstra’s algorithm, ensuring that the travel path avoids disconnections and is optimal.</li>
+                <li><strong>Level-by-Level Travel (BFS):</strong> Users can explore locations in a level-wise manner, possibly implemented using Breadth First Search (BFS). This could be useful for hierarchical travel exploration.</li>
+                <li><strong>Connected Shortest Path Tour (Prim’s Algorithm):</strong> Users looking for a fully connected tour with all places visited can rely on this feature, implemented using Prim’s algorithm. This ensures the shortest connected paths are prioritized.</li>
+                <li><strong>Disconnected Shortest Path Tour (Kruskal’s Algorithm):</strong> If a connected tour isn’t necessary, but all locations must be visited via the shortest paths, this feature employs Kruskal’s algorithm to design an efficient route.</li>
+            </ul>
+        </section>
+
+        <section class="section highlight">
+            <h2>Highlights</h2>
+            <ul>
+                <li><strong>Direct Navigation Input:</strong> Users can manually input their desired location and receive guidance or travel details to reach it.</li>
+                <li><strong>Payment System:</strong> A feature for users to make travel-related payments, which might integrate with various payment gateways.</li>
+                <li><strong>User Ratings:</strong> Users can provide feedback or rate the service or application based on their experience.</li>
+                <li><strong>Emergency Services:</strong>
+                    <ul>
+                        <li><strong>Hospital:</strong> Provides guidance or navigation to the nearest hospital.</li>
+                        <li><strong>Police Station:</strong> Directs users to the closest police station.</li>
+                        <li><strong>Fire Department:</strong> Helps users reach the nearest fire department.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Functionalities</h2>
+            <ul>
+                <li><strong>Graph Algorithms:</strong> Algorithms like DFS, BFS, Dijkstra’s, Prim’s, and Kruskal’s are used to manage and optimize travel paths, enabling the application to provide efficient solutions for various user scenarios.</li>
+                <li><strong>Data Management:</strong> Features for file loading and reading allow flexibility in managing travel data.</li>
+                <li><strong>User Interaction:</strong> Options for manual input, payments, and ratings improve user engagement.</li>
+                <li><strong>Emergency Navigation:</strong> Built-in support for navigating to essential services enhances the system’s utility.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Smart Transportation Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
